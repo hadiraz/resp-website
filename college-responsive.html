@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College website</title>
+    <link rel="stylesheet" href="college-responsive-css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="index.html"><img class="logo-img" src="eduford_img/logo.png" alt="logo image"></a>
+            <i class="fas fa-bars" onclick="show_menu(this)"></i>
+            <div id="links-container" class="links-container">
+                <i class="fa fa-times" aria-hidden="true" onclick="close_menu()"></i>
+            <ul class="links-box">
+                <li ><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+            </ul>
+            </div>
+        </nav>
+        <section class="title-slogan">
+            <h2>World's Biggest University</h2>
+            <p>Making website is not too hard anymore!</p>
+            <span class="special-btn">
+                <a href="">
+                   Click to get more information 
+                </a>
+            </span>
+        </section>
+    </header>
+
+<!-- course section -->  
+
+    <section class="course-section">
+        <div class="course-title">
+            <h2>Courses we offer</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam unde perferendis dolore numquam amet id assumenda sunt corrupti? </p>
+        </div>
+        <div class="course-container-box">
+            <div class="course-box">
+                <h2>Degree</h2>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla error aperiam voluptas reprehenderit natus, ipsam pariatur velit minus voluptatem. Nisi consequatur fugit mollitia suscipit assumenda provident dolorum eaque, </p>
+            </div>
+            <div class="course-box">
+                <h2>Post Graduation</h2>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla error aperiam voluptas reprehenderit natus, ipsam pariatur velit minus voluptatem. Nisi consequatur fugit mollitia suscipit assumenda provident dolorum eaque,</p>
+            </div>
+            <div class="course-box">
+                <h2>Intermediate</h2>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla error aperiam voluptas reprehenderit natus, ipsam pariatur velit minus voluptatem. Nisi consequatur fugit mollitia suscipit assumenda provident dolorum eaque,</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+<script>
+    // toggle nav bar
+    function show_menu(){
+        document.getElementById("links-container").style.right="0";
+    }
+    function close_menu(){
+        document.getElementById("links-container").style.right="-200px";
+    }
+    //-!---
+    
+</script>
