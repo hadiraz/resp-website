@@ -200,7 +200,56 @@ a{
     width: 100%;
     display: block;
 }
+
 /* facilities section */
+
+.facilities-section{
+    width: 100%;
+    display:flex;
+    flex-flow:column nowrap;
+    padding:20px;
+    align-items:center;
+}
+.facilities-main-title{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.facilities-container-boxes{
+    width: 100%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+.facilities-box{
+    width: 350px;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    overflow:hidden;
+    margin: 25px 15px;
+}
+.facilities-img{
+    border-radius:10px;
+    overflow: hidden;
+    width:100%;
+    display: block;
+}
+.facilities-desc h2{
+    font-size: 20px;
+    font-weight:700;
+    margin: 15px 0 10px 0;
+}
+.facilities-desc p{
+    text-align: left;
+    font-size: 15px;
+    color:#727272;
+    margin: 20px 0;
+}
+
+/* testimonial section */
+
 
 /* media for max-width:650px */
 
@@ -282,4 +331,10 @@ a{
     }
 
     /*facilities section*/
+
+    .facilities-box{
+        width: 100%;
+    }
+
+    /*testimonial section*/
 }
