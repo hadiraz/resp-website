@@ -249,6 +249,133 @@ a{
 }
 
 /* testimonial section */
+.testi-section{
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-flow:column nowrap;
+
+}
+.testi-container-boxes{
+    display:flex;
+    flex-flow:row wrap;
+    padding:20px 50px;
+    justify-content: center;
+}
+.main-testi-title{
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.main-testi-title h2{
+    text-align: center;
+}
+.main-testi-title p{
+    text-align: center;
+    margin-top: 10px;
+    color:#727272;
+    line-height:18px;
+    font-size:15px;
+}
+.testi-box{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    padding:15px;
+    margin:20px 20px 0 0;
+    min-width: 360px;
+}
+.testi-box img{
+    width: 50px;
+    height:50px;
+    display:block;
+    border-radius:100%;
+    overflow:hidden;
+}
+.user-comment-box{
+    width: 80%;
+}
+.testi-box{
+    width: 45%;
+    min-height:150px;
+    border-radius: 15px;
+    background-color: rgb(255, 252, 202);
+
+}
+.user-comment{
+    line-height: 22px;
+    margin-left: 10px;
+}
+.comment-user-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+.comment-star-box-white{
+    width: 100%;
+    display: flex;
+    flex-flow:row nowrap;
+    overflow: hidden;
+    font-size: 17px;
+    color:rgb(153, 153, 153);
+}
+.main-comment-star-box{
+    position: relative;
+    width: 97px;
+}
+.comment-star-box-orange{
+    position: relative;
+    width: 92%;
+    display: flex;
+    flex-flow:row nowrap;
+    overflow: hidden;
+    color: rgb(252, 203, 97);
+    font-size:17px;
+    top: -17px;
+    z-index: 2;
+}
+
+/* cts section */
+.cts-section{
+    width: 100%;
+    padding:30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.main-cts{
+    display: flex;
+    flex-flow:column nowrap;
+    text-align: center;
+    width: 80%;
+    background: linear-gradient(rgba(126, 126, 126, 0.7),rgba(33, 9, 25, 0.7)),url("eduford_img/banner2.jpg");
+    min-height: 410px;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    color:#fff;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 10px;
+}
+.cts-img{
+  
+}
+.main-cts .special-btn{
+    padding:7px 20px;
+}
+.main-cts h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.main-cts p{
+    font-size: 18px;
+}
 
 
 /* media for max-width:650px */
@@ -337,4 +464,18 @@ a{
     }
 
     /*testimonial section*/
+
+    .testi-container-boxes{
+        flex-flow: column;
+        padding: 20px;
+    }
+    .testi-box{
+        width: 100%;
+        min-width: 0;
+    }
+    .user-comment{
+        line-height: 22px;
+        margin-left: 20px;  
+    }
+    /*  cts section */
 }
